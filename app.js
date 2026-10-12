@@ -609,6 +609,8 @@
 
   function TrustCard(props) {
     var d = props.d;
+    var q2State = useState(false);
+    var q2Open = q2State[0]; var setQ2 = q2State[1];
     var highlights = [['亮点1', d.h1], ['亮点2', d.h2], ['亮点3', d.h3]];
     var routes = buildRoutes(d.type).map(function (rt) {
       return html`<div className="route-item" key=${rt.name}>
@@ -651,11 +653,12 @@
           <div className="q-text">${d.quote}</div>
           <div className="q-author">—— @李女士 · 九寨沟 3 日跟团</div>
         </div>
-        <div className="quote q2">
+        ${q2Open && html`<div className="quote q2">
           <div className="q-tag">新客户</div>
           <div className="q-text">${d.quote2}</div>
           <div className="q-author">—— @周先生 · 上月包车</div>
-        </div>
+        </div>`}
+        <button type="button" className="quote-toggle" onClick=${function () { setQ2(!q2Open); }}>${q2Open ? '收起新客户口碑 ▴' : '展开新客户口碑 ▾'}</button>
         </div>
         <div className="trust-photo">
           <div className="tp-grid">
@@ -708,6 +711,14 @@
             <${Form.Item} label="试试示例">
               <div className="sample-row">${samples}</div>
             </${Form.Item}>
+            <div className="tips-card">
+              <div className="tips-head">💡 填写攻略</div>
+              <ul className="tips-list">
+                <li>老客户的原话直接粘进介绍框，比自夸更可信</li>
+                <li>快捷标签点 3~5 个最拿手的就够，别全选</li>
+                <li>地区写「城市＋周边」更准，如：川西 / 大理+丽江</li>
+              </ul>
+            </div>
             <${Button} type="primary" block className="gen-btn" htmlType="submit">🚀 一键生成全部内容</${Button}>
             <div className="gen-hint">生成后，口碑面板 / 种草笔记 / 主页预览 同步产出</div>
           </${Form}>
@@ -1186,7 +1197,7 @@
               <span className="footer-name">本地旅行主理人 · 一站式小红书账号运营工作台</span>
             </div>
             <p className="footer-tag">AI 帮你搞定小红书获客 · 信任名片 / 口碑面板 / 种草笔记 / 主页预览 / 咨询话术</p>
-            <div className="ver-mark">v73 · 16:17</div>
+            <div className="ver-mark">v74 · 17:02</div>
           </div>
         </${Content}>
       </${Layout}>
