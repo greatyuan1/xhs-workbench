@@ -502,7 +502,6 @@
       <div className="wb-header-inner">
         <span className="logo" aria-label="种草 logo"><svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0 2.5) rotate(-7 17 15)"><path d="M17 14.5 C12.3 14.2 8.8 11.2 8.9 7.5 C9 4.8 11.4 3.5 13.5 4.8 C15.8 6.2 16.9 10 17 14.5 Z" fill="#52C9A0" /><path d="M17 14.5 C22.2 14.2 25.9 11.4 25.8 7.3 C25.7 4.4 23 3 20.5 4.5 C17.9 6 17.1 10 17 14.5 Z" fill="#52C9A0" /><rect x="15.8" y="13.8" width="2.4" height="11.5" rx="1.2" fill="#52C9A0" /></g></svg></span>
         <span className="brand-name">本地旅行主理人 · 一站式小红书账号运营工作台</span>
-        <a className="classic-link" href="index-classic.html">经典版入口 →</a>
       </div>
     </${Header}>`;
   }
@@ -525,7 +524,7 @@
       <div className="hero-inner">
         <span className="hero-overline">AI Builder · 本地旅行主理人获客神器</span>
         <${Title} level=${1} className="hero-title">本地旅行主理人<span className="hero-title-accent">一站式小红书账号运营工作台</span></${Title}>
-        <p className="hero-sub">给会玩但不会运营优质地司/导/社——AI帮你搞定小红书账号经营全流程</p>
+        <p className="hero-sub">给会玩但不会运营的优质司/导/社——AI帮你搞定小红书账号经营全流程</p>
         <div className="hero-collage">
           <div className="tile big">
             <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=700&h=700&fit=crop&q=75&auto=format" alt="" onerror=${function (e) { e.target.style.display = 'none'; }} />
@@ -1187,7 +1186,7 @@
               <span className="footer-name">本地旅行主理人 · 一站式小红书账号运营工作台</span>
             </div>
             <p className="footer-tag">AI 帮你搞定小红书获客 · 信任名片 / 口碑面板 / 种草笔记 / 主页预览 / 咨询话术</p>
-            <div className="ver-mark">v70 · 15:55</div>
+            <div className="ver-mark">v73 · 16:17</div>
           </div>
         </${Content}>
       </${Layout}>
